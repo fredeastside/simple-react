@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html
+    font-family 'Roboto', sans-serif
+    background url('../img/bg.jpg') no-repeat center center fixed
+    background-size cover
+    font-size: 16px
+    color: white
+    line-height: 1.8
+
+.greeting
+    position: fixed
+    top 0
+    bottom: 0
+    left: 0
+    right: 0
+    background url('../img/greeting.jpg') no-repeat center center fixed
+    background-size cover
+    transition: all 1s linear
+    opacity: 1
+    z-index: 999
+    &.disable
+        opacity: 0
+        visibility: hidden
+
+.container
+    width: 1024px
+    margin: 40px auto
+
+.navigation
+    margin-bottom: 40px
+    list-style none
+    display: flex
+    justify-content: space-around
+    & li
+        & a
+            color: white
+            text-decoration: none
+            font-weight: bold
+            font-size: 20px
+            &:hover
+                text-decoration: underline
+            &.active
+                color: #61666b
+
+.pride
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+.video
+  width 750px
+  margin 0 auto 20px
+  overflow hidden
+  position relative
+  border 20px solid base-background-cover
+  &:after
+    padding-top 56.25%
+    display block
+    content ''
+
+.video iframe, .video object, .video embed
+  position: absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+
+.photo
+    width: 100%
+
+.slick-slide img
+    width: 100%
+    height: 100%
+
+.download
+    width: 640px
+    margin: 140px auto
+
+.social-list
+    list-style: none
+    display: flex
+    justify-content: center
+
+.social
+    width: 50px
+    height: 50px
+    display: inline-block
+    background-size: contain
+    background-repeat: no-repeat
+    margin: 40px 10px 0
+    cursor: pointer
+    &.social-fb
+        background-image: url("../img/facebook-logo-button.svg")
+    &.social-vk
+        background-image: url("../img/vk-social-logotype.svg")
+    &.social-inst
+        background-image: url("../img/instagram-logo.svg")
+    &.social-yt
+        background-image: url("../img/youtube-logotype.svg")
